@@ -4,6 +4,7 @@ We are a non-profit organization, dedicated to the care of orphaned tabby cats. 
 ## STYLE GUIDE
 
 ### FONT
+* links for fonts below already added in index.html
 * Questrial for headings and forms: https://www.google.com/fonts/specimen/Questrial
 * Old Standard TT: https://www.google.com/fonts/specimen/Old+Standard+TT
 
