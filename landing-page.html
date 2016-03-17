@@ -1,5 +1,5 @@
 
-<div ng-controller = "landingPageController">
+<div ng-controller = "landingPageController as cont">
 
   <div>This is the landing page </div>
 
@@ -8,8 +8,10 @@
   <a href = "#Cart">TAKE ME TO CART PAGE</a>
 
 {{message}}
-{{cats[0].name}}
-{{cats[1].name}}
-<img src ="{{cats[1].image}}"></img>
 
-</div>
+
+
+<!-- <div ng-repeat="cat in cont.cats"> -->
+  {{cats}}
+  <img src ="{{cat.image}}" width = "300px"></img>
+<!-- </div> -->

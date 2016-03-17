@@ -26,5 +26,136 @@
         "stars" : 5
       }
     ]
+  },
+  {
+    "name" : "Bumbly Meow",
+    "type" : "Special",
+    "price" : 100,
+    "desc" : "This is a gray kitty, slighly chubby, and has a big tail.",
+    "image" : "assets/images/bumbly-meow.png",
+    "reviews" : [
+      {
+        "revName" : "Byron",
+        "text" : "This cat is very hungry and carries around a fishbone with it all the time.",
+        "stars" : 4
+      }
+    ]
+  },
+  {
+    "name" : "Coy Pinky",
+    "type" : "Pinky",
+    "price" : 50000,
+    "desc" : "This is a pink cat and pretends he doesn't like you but he does.",
+    "image" : "assets/images/coy-pink.png",
+    "reviews" : [
+      {
+        "revName" : "Pip",
+        "text" : "Sleepy kitty. Too sleepy.",
+        "stars" : 1
+      }
+    ]
+  },
+  {
+    "name" : "Crazy Pinky",
+    "type" : "Pinky",
+    "price" : 18000,
+    "desc" : "This is a pink cat and is very crazy. Don't leave him alone with your children.",
+    "image" : "assets/images/crazy-pink.png",
+    "reviews" : [
+      {
+        "revName" : "Former Dad",
+        "text" : "I left him alone with my children.",
+        "stars" : -1
+      }
+    ]
+  },
+  {
+    "name" : "Curmudgeonly Crumbcatcher",
+    "type" : "Pinky",
+    "price" : 10000,
+    "desc" : "This a cranky, pretentious kitty.  Only loves his mouse. Doesn't share.",
+    "image" : "assets/images/curmudgeonly-crumbcatcher.png",
+    "reviews" : [
+      {
+        "revName" : "Kelly",
+        "text" : "I never have any crumbs thanks to this kitty!",
+        "stars" : 5
+      }
+    ]
+  },
+  {
+    "name" : "Daddy Bob",
+    "type" : "Special",
+    "price" : 357000,
+    "desc" : "This snow white kitty has sired many kittens. Named Bob.",
+    "image" : "assets/images/daddy-bob.png",
+    "reviews" : [
+      {
+        "revName" : "Alex",
+        "text" : "good kitty, but too many kittens!",
+        "stars" : 4
+      },
+      {
+        "revName" : "Nicole",
+        "text" : "Cat out all night! Angry female cats show up in the morning! DO. NOT. Trust.",
+        "stars" : 2
+      }
+    ]
+  },
+  {
+    "name" : "Delightful Ploop",
+    "type" : "Special",
+    "price" : 99099,
+    "desc" : "The most delightful kitten, big tail.",
+    "image" : "assets/images/delightful-ploop.png",
+    "reviews" : [
+      {
+        "revName" : "Rhonda",
+        "text" : "satisfactory.",
+        "stars" : 3
+      }
+    ]
+  },
+  {
+    "name" : "Evil Meep",
+    "type" : "Evil",
+    "price" : 666,
+    "desc" : "PURE EVIL.",
+    "image" : "assets/images/evil-meep.png",
+    "reviews" : [
+      {
+        "revName" : "Mason",
+        "text" : "BAD APPLE! STOLE MY PIZZA!",
+        "stars" : 2
+      }
+    ]
+  },
+  {
+    "name" : "Formidable Twinkie",
+    "type" : "special",
+    "price" : 999,
+    "desc" : "Pure good.",
+    "image" : "assets/images/formidable-twinkie.png",
+    "reviews" : [
+      {
+        "revName" : "Jasmine",
+        "text" : "Good kitty! Brings you pizza! Would pet again.",
+        "stars" : 5
+      }
+    ]
+  },
+  {
+    "name" : "Night Cookie",
+    "type" : "Night",
+    "price" : 560912,
+    "desc" : "Very nocturnal. Secretly eats all the fish",
+    "image" : "assets/images/night-cookie.png",
+    "reviews" : [
+      {
+        "revName" : "Tori",
+        "text" : "Needs less fish, more cookies.",
+        "stars" : 4
+      }
+    ]
   }
 ]
