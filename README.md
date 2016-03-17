@@ -19,4 +19,4 @@ We are a non-profit organization, dedicated to the care of orphaned tabby cats. 
 * alex's super duper cool forms for the detials-edit page
 
 ### NAMING CONVENTIONS
-* 
+* ex. frm cntrl btn
