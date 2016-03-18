@@ -1,12 +1,84 @@
+$heading-font: 'Questrial', sans-serif;
+$content-font: 'Old Standard TT', serif;
+
+body{
+  background:#D0F2E7;
+}
+
+h1{
+  color: #DF3B8C;
+  font-size: 3em;
+  width:50%;
+  margin-left: 28%;
+}
+h2{
+  color: #DF3B8C;
+  font-size: 2em;
+  width:80%;
+  margin-left: 12%;
+  font-family: $content-font;
+  margin-top: -5%;
+}
+.caps{
+  font-size: 1.7em;
+  color: darken(#DF3B8C, 15%);
+  font-family: $content-font;
+}
 
 .submit-btn{
   border: 1px solid black;
   background-color: red;
   width: 200px;
 }
-
-a {
-  border: 1px solid black;
-  background-color: green;
-  width: 300px;
+#filterText{
+  width: 70%;
+  font-size: 2em;
+  margin-bottom: 1%;
+  margin-left: 15%;
+  outline: none;
+  padding: 5px;
+  border-radius: 20px;
+}
+.aCat{
+  z-index:0;
+  display: inline-block;
+  float: left;
+  border: 8px #DF3B8C solid;
+  border-bottom: 8px darken(#DF3B8C, 15%) solid;
+  border-top: 8px lighten(#DF3B8C, 15%) solid;
+  // border-radius: 30px;
+  overflow:hidden;
+  width: 275px;
+  height: 275px;
+  box-sizing: border-box;
+  margin:10px;
+}
+.allCatsContainer{
+  width:95%;
+  margin-left: 2.5%;
+  margin-right:2.5%;
+}
+.catInfo{
+  overflow:hidden;
+  width: 275px;
+  height: 275px;
+  position: absolute;
+  vertical-align:middle;
+  text-align:center;
+  font-family: sans-serif;
+  color: rgba(0,0,0,0);
+  font-size: 1.5em;
+}
+.catInfo:hover{
+  z-index: 5;
+  overflow:hidden;
+  width: 260px;
+  height: 260px;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  vertical-align:middle;
+  text-align:center;
+  font-family: sans-serif;
+  color: #BCEBDF;
+  font-size: 1.5em;
 }
