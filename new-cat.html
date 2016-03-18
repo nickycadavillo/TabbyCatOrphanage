@@ -4,7 +4,8 @@
 <div ng-controller = "newCatController">
 
 <form class="form">
-    <input type="text" placeholder="Cat Name"/>
+    <label for = "cat-name"></label>
+    <input id = "cat-name" type="text" placeholder="Cat Name"/>
     <input type="text" placeholder="Image url"/>
     <select id="Type" name="Types">
       <option>Special</option>
@@ -14,9 +15,12 @@
       <option>Space</option>
       <option>Caspers</option>
     </select>
-    <input type="price" placeholder="Price"/>
-    <input type="text" placeholder="Foster Parent"/>
-    <textarea id="description" name="description" placeholder="description"></textarea>
+    <label for = "price"></label>
+    <input id = "price" type="price" placeholder="Price"/>
+    <label for = "foster-p"></label>
+    <input  id = "foster-p" type="text" placeholder="Foster Parent"/>
+    <label for = "cat-desc"></label>
+    <textarea id="cat-desc" name="description" placeholder="description"></textarea>
     <div class = "submit-btn">BUTTON</div>
 </form>
 

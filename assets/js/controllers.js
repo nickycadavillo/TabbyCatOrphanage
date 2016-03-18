@@ -10,8 +10,8 @@ tabbyApp.controller('landingPageController', [ '$http', '$scope', function($http
   $scope.message = "SCOPE IS WORKING";
   $http.get('assets/json/tabbycat.json').success(function(data){
     $scope.cats = data
-  });
-}]);
+  });//close get
+}]);//close controller
 
 // new cat controller to update json file
 tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $scope){
@@ -30,4 +30,12 @@ tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $sc
     })
 
 
+}]);//close controller
+
+//details-edit controller
+tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $scope){
+  $scope.message = "scope success";
+  $http.get('assets/json/tabbycat.json').success(function(data){
+    $scope.cats = data
+  });//close get
 }]);//close controller

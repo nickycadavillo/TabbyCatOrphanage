@@ -1,1 +1,28 @@
 <div> THIS IS DETAILS PAGE </div>
+
+<div ng-controller = "editPageController">
+
+<!-- {{cats}} -->
+
+<form class="form">
+    <label ng-hide = "editing" for = "cat-name">{{cats}}</label>
+    <input  ng-show = "editing" ng-model = "cats"  id = "cat-name" type="text"/>
+    <!-- <input type="text" placeholder="Image url"/>
+    <select id="Type" name="Types">
+      <option>Special</option>
+      <option>Rainbow</option>
+      <option>Night</option>
+      <option>Evil</option>
+      <option>Space</option>
+      <option>Caspers</option>
+    </select>
+    <label ng-hide = "editing" for = "price">{{edit.price}}</label>
+    <input ng-show = "editing" ng-model = "edit.price" id = "price" type="price" placeholder="Price"/>
+    <label ng-hide = "editing" for = "foster-p">{{edit.foster}}</label>
+    <input ng-show = "editing" ng-model = "edit.foster" id = "foster-p" type="text" placeholder="Foster Parent"/>
+    <label for = "cat-desc"></label>
+    <textarea id="cat-desc" name="description" placeholder="description"></textarea> -->
+    <div ng-click = "editing = !editing" class = "submit-btn">BUTTON</div>
+</form>
+
+</div>
