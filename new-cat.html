@@ -1,29 +1,32 @@
-
-
-<div> THIS IS NEW CAT PAGE </div>
 <div ng-controller = "newCatController">
 
 <form class="form">
-    <label for = "cat-name"></label>
-    <input id = "cat-name" type="text" placeholder="Cat Name"/>
-    <input type="text" placeholder="Image url"/>
-    <select id="Type" name="Types">
-      <option>Special</option>
-      <option>Rainbow</option>
-      <option>Night</option>
-      <option>Evil</option>
-      <option>Space</option>
-      <option>Caspers</option>
-    </select>
-    <label for = "price"></label>
-    <input id = "price" type="price" placeholder="Price"/>
-    <label for = "foster-p"></label>
-    <input  id = "foster-p" type="text" placeholder="Foster Parent"/>
-    <label for = "cat-desc"></label>
-    <textarea id="cat-desc" name="description" placeholder="description"></textarea>
-    <div class = "submit-btn">BUTTON</div>
+    <div class = "frm-left">
+      <input class = "frm-img" type="text" placeholder="Insert Image URL here!"/>
+    </div>
+    <div class = "frm-right">
+      <label for = "cat-name">Cat Name</label>
+      <input id = "frm-cat-name" type="text" placeholder="Cat Name"/>
+      <label for = "price">Price</label>
+      <input id = "frm-price" type="price" placeholder="Price"/>
+      <label for = "types">Cat Type</label>
+      <select id="frm-type" name="Types">
+        <option>Special</option>
+        <option>Rainbow</option>
+        <option>Night</option>
+        <option>Evil</option>
+        <option>Space</option>
+        <option>Caspers</option>
+      </select>
+      <label for = "foster-p">Foster Parent</label>
+      <input  id = "frm-foster" type="text" placeholder="Your name"/>
+    </div>
+    <div class = "frm-bottom">
+      <label for = "cat-desc">Description</label>
+      <textarea id="frm-desc" name="description" placeholder="Describe your furry friend"></textarea>
+      <div id = "submit-new" class = "submit-btn">submit</div>
+    </div>
 </form>
 
-{{something}}
 
 </div>
