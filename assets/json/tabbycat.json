@@ -1,5 +1,6 @@
-[
-  {
+{
+  "allCats" : [
+   {
     "name" : "Fluffy Knight",
     "type" : "Special",
     "price" : 10,
@@ -159,3 +160,4 @@
     ]
   }
 ]
+}

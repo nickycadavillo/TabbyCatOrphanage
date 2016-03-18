@@ -13,6 +13,8 @@ tabbyApp.controller('landingPageController', [ '$http', '$scope', function($http
   });//close get
 }]);//close controller
 
+//https://stormy-meadow-75496.herokuapp.com/cat/index
+
 // new cat controller to update json file
 tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $scope){
     $scope.something = "SCOPE IS WORKING";

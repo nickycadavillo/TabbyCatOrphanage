@@ -1,3 +1,8 @@
+// ;var XHR = new.XMLHttpRequest();
+// XHR.onReadyStateChange = function(){
+//
+
+
 var tabbyApp = angular.module('tabbyApp', ['ngRoute']);
 
 tabbyApp.config(function($routeProvider) {
@@ -17,3 +22,5 @@ tabbyApp.config(function($routeProvider) {
                 templateUrl : 'cart.html',
             })
           });
+
+// }//closes xhr
