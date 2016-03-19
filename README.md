@@ -18,10 +18,10 @@ Consumer View:
 Admin View:
  * [ ] Admins have the ability to CRUD Products to your store
  * [ ] Product Model should have the following attributes:
-  * [ ] Picture (via a link, no upload)
-  * [ ] Product name
-  * [ ] Product Description
-  * [ ] Product Price
+  * [x] Picture (via a link, no upload)
+  * [x] Product name
+  * [x] Product Description
+  * [x] Product Price
   * [ ] Reviews (array of objects)
     * [ ] each review will contain:
       * [ ] name
