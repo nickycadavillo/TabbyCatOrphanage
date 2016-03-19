@@ -4,7 +4,7 @@ We are a non-profit organization, dedicated to the care of orphaned tabby cats. 
 ### Plan of attack/Requirements
 
 Consumer View: 
- * [ ] Will be able to browse a list of products
+ * [x] Will be able to browse a list of products
  * [ ] Can navigate to a product detail page to get more information, including reviews
  * [ ] Will be able to add any product to a shopping cart and adjust quantity
     Shopping Cart for consumer
