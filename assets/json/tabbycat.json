@@ -171,15 +171,116 @@
       "id": "51894ea3-0a69-41a0-ace1-42b4245489a6"
     },
     {
-      "name": "JERKFACE",
+      "name": "Her Majesty, The Empress Tush",
       "type": "Special",
-      "price": 10,
-      "desc": "This is a gray cutie with an adorable baseball hat.",
-      "image": "assets/images/fluffy-knight.png",
-      "reviews[0][revName]": "Nicky C",
-      "reviews[0][text]": "This is the best cat ever. Yay!",
-      "reviews[0][stars]": 5,
-      "id": "e02084be-215b-4f4a-b0a4-4e9462a04c56"
+      "price": 11225,
+      "desc": "This pretty kitty insists on being called by her full title",
+      "image": "assets/images/her-majesty-empress-tush.png",
+      "reviews": [
+        {
+          "revName": "Matt",
+          "text": "Too sassy. full of self. like she owns the palce.",
+          "stars": 2
+        }
+      ]
+    },
+    {
+      "name": "Jiggly Casper",
+      "type": "casper",
+      "price": 69999,
+      "desc": "AH! ITS A GHOST! HOWD YOU GET IN HERE! DONT HAUNT ME!",
+      "image": "assets/images/jiggly-casper.png",
+      "reviews": [
+        {
+          "revName": "Dennis",
+          "text": "Best haunting ever. would get haunted again.",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "name": "Space Hijinks",
+      "type": "Space",
+      "price": 900,
+      "desc": "This little guy likes to do cartwheels in outer space. who wouldnt?",
+      "image": "assets/images/Space-Hijinks.png",
+      "reviews": [
+        {
+          "revName": "Jasmine",
+          "text": "I like a cat who has diverse interests, so this kitty is a 5",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "name": "Magic Berry",
+      "type": "Special",
+      "price": 9.99,
+      "desc": "This cat is marked down to move! slightly used, but still has a lot of miles on him!",
+      "image": "assets/images/magic-berry.png",
+      "reviews": [
+        {
+          "revName": "Daniel",
+          "text": "I had this cat before. Not flashy, but a good solid cat.",
+          "stars": 3
+        }
+      ]
+    },
+    {
+      "name": "Loopy Rainbow",
+      "type": "rainbow",
+      "price": 1928.37,
+      "desc": "This cat comes from a land of JUST rainbows, so he is very confused about regular human ",
+      "image": "assets/images/Loopy-Rainbow.gif",
+      "reviews": [
+        {
+          "revName": "Jeremy",
+          "text": "I like this cat because he has unique perspectives on life, the universe, Everything!",
+          "stars": 4
+        }
+      ]
+    },
+    {
+      "name": "Space Killer",
+      "type": "space",
+      "price": 700,
+      "desc": "This intergalactic assassin is visiting our world in cat-form for a while.",
+      "image": "assets/images/space-killer.png",
+      "reviews": [
+        {
+          "revName": "Jeremy",
+          "text": "I like this cat because he has unique perspectives on life, the universe, Everything!",
+          "stars": 4
+        }
+      ]
+    },
+    {
+      "name": "Mighty Casper",
+      "type": "casper",
+      "price": 55,
+      "desc": "This brawny ghost kitty can beat up intruders!",
+      "image": "assets/images/mighty-casper.png",
+      "reviews": [
+        {
+          "revName": "Andrew",
+          "text": "This cat is too invisible. would not reccomend.",
+          "stars": 3
+        }
+      ]
+    },
+    {
+      "name": "Sir Bailey",
+      "type": "special",
+      "price": 89012,
+      "desc": "This kitty is happy to lounge all day and watch the beautiful game on tv.",
+      "image": "assets/images/sir-bailey.png",
+      "reviews": [
+        {
+          "revName": "Greg",
+          "text": "I would get along with this cat. we could watch the footy!",
+          "stars": 5
+        }
+      ]
     }
-  ]
+  ] 
 }
