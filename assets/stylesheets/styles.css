@@ -156,6 +156,9 @@ h2 {
   .frm-bottom #frm-desc {
     width: 90%;
     height: 100px; }
+    @media (max-width: 690px) {
+      .frm-bottom #frm-desc {
+        width: 100%; } }
   .frm-bottom textarea {
     border: none;
     background-color: #ebf2f2; }
@@ -171,6 +174,9 @@ h2 {
   color: white;
   background-color: #df3b8c;
   font-weight: 400; }
+  @media (max-width: 690px) {
+    .submit-btn {
+      margin-left: 0%; } }
 
 .modal-container {
   position: fixed;

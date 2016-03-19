@@ -232,6 +232,10 @@ $breakpoints: (
   #frm-desc{
     width: 90%;
     height: 100px;
+
+    @include respond-to('phone') {
+      width: 100%;
+    }
   }
 
   textarea {
@@ -252,6 +256,11 @@ $breakpoints: (
   color: white;
   background-color: rgb(223,59,140);
   font-weight: 400;
+
+  @include respond-to('phone') {
+    margin-left: 0%;
+  }
+
 } // closes submit btn
 
 .modal-container {
