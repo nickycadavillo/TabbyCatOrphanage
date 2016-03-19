@@ -1,6 +1,15 @@
 $heading-font: 'Questrial', sans-serif;
 $content-font: 'Old Standard TT', serif;
 
+a{
+  text-decoration: none;
+}
+#navLink{
+  display: inline-block;
+  // width: 5%;
+  color: #DF3B8C;
+  margin-left: 10px;
+}
 
 body{
   background:#D0F2E7;
@@ -12,6 +21,12 @@ h1{
   width:50%;
   margin-left: 28%;
   margin-top:-15px;
+}
+h1:hover{
+  .caps{
+    color: darken(#DF3B8C, 30%);
+  }
+  color: darken(#DF3B8C, 15%);
 }
 
 h2{
@@ -29,12 +44,11 @@ h2{
   font-family: $content-font;
 }
 
-
 #filterText{
   width: 70%;
   font-size: 2em;
   margin-bottom: 1%;
-  margin-left: 15%;
+  margin-left: 12%;
   outline: none;
   padding: 5px;
   border-radius: 20px;
@@ -85,7 +99,15 @@ h2{
   font-family: sans-serif;
   color: #BCEBDF;
   font-size: 1.5em;
+  .catCost{
+    color: rgb(23, 231, 75);
+  }
+  .catDesc{
+  font-family: 'Old Standard TT';
+  font-size: .7em;
+  }
 }
+
 
 // styles for new-cat.html and details-edit.html below
 

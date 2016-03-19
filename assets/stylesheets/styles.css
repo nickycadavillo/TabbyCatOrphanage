@@ -1,3 +1,11 @@
+a {
+  text-decoration: none; }
+
+#navLink {
+  display: inline-block;
+  color: #DF3B8C;
+  margin-left: 10px; }
+
 body {
   background: #D0F2E7; }
 
@@ -7,6 +15,11 @@ h1 {
   width: 50%;
   margin-left: 28%;
   margin-top: -15px; }
+
+h1:hover {
+  color: #b11d66; }
+  h1:hover .caps {
+    color: #6f1240; }
 
 h2 {
   color: #DF3B8C;
@@ -25,7 +38,7 @@ h2 {
   width: 70%;
   font-size: 2em;
   margin-bottom: 1%;
-  margin-left: 15%;
+  margin-left: 12%;
   outline: none;
   padding: 5px;
   border-radius: 20px; }
@@ -71,6 +84,11 @@ h2 {
   font-family: sans-serif;
   color: #BCEBDF;
   font-size: 1.5em; }
+  .catInfo:hover .catCost {
+    color: #17e74b; }
+  .catInfo:hover .catDesc {
+    font-family: 'Old Standard TT';
+    font-size: .7em; }
 
 .form {
   color: #df3b8c;
