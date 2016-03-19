@@ -288,19 +288,52 @@ $breakpoints: (
 
 .modal-container {
   position: fixed;
-  background: #C0C0C0;
+  background: rgb(235,242,242);
   display: none;
+
+  @include respond-to('phone') {
+    margin-bottom: 50%;
+  }
 }
 
 
 .modal-container.showing {
+  border: 3px solid rgb(223,59,140);
   display: block;
+  margin-left: 30%;
+  margin-top: -10%;
+  width: 500px;
+  height: 200px;
+
+  @include respond-to('medium') {
+    margin-left: 20%;
+  }
+
+  @include respond-to('phone') {
+    margin-left: 5%;
+    margin-top: -80%;
+    width: 300px;
+    height: 200px;
+  }
 }
 
 .modal {
+  width: 500px;
+  height: 200px;
   position: fixed;
-  width: 50%;
-  padding: 2em;
+  text-align: center;
+
+  h1 {
+    padding-top: 1em;
+    width: 100%;
+    margin: 0;
+  }
+
+  @include respond-to('phone') {
+    margin-left: 0;
+    width: 75%;
+    text-align: center;
+  }
 }
 
 .modal-x {
@@ -308,7 +341,12 @@ $breakpoints: (
     top: 0.5em;
     right: 0.5em;
     border-radius: 2em;
-    border: 1px solid black;
+
+    @include respond-to('phone') {
+      top: 0.5em;
+      right: 0.5em;
+    }
+
 }
 
 

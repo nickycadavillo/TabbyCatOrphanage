@@ -38,11 +38,28 @@ tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $sc
       console.log("failure!");
     };
 
-    $('.submit-btn').click(function(){
-      var newCat = {'name': 'JERKFACE','type': 'Special','price': 10,'desc': 'This is a gray cutie with an adorable baseball hat.','image': 'assets/images/fluffy-knight.png','reviews': [{'revName': 'Nicky C','text': 'This is the best cat ever. Yay!','stars': 5}]};
+var cName;
+var cType;
+var cPrice;
+var cDesc;
+var cImg;
 
+var newCat;
+
+    $('.submit-btn').click(function(data){
+
+      cName = $("#frm-cat-name").val();
+      cType = $("#frm-type").val();
+      cPrice = $("#frm-price").val();
+      cDesc = $("#frm-desc").val();
+      cImg = $(".frm-img").val();
+
+      newCat =  {'name': cName,'type': cType,'price': cPrice,'desc': cDesc ,'image': cImg};
+
+      console.log($scope.data);
 
       console.log("we clicked");
+      // $(.form).val('');
 
       $.ajax({
         method: "POST",
@@ -54,11 +71,37 @@ tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $sc
         console.log("posted!");
       });
 
+      }); // closes submit-btn function
+
         //this angular.js implimentation of getting and posting to json. not working they might work...?
       // $http.post('http://localhost:3000/allCats', newCat).then(postSuccess, postFailure);
-    });
 
 }]);//close controller
+
+
+//modal controller
+tabbyApp.controller('modalController', [ '$http', '$scope', function($http, $scope){
+
+  // $(function () {
+  //   'use strict';
+
+    $('#submit-new').on('click', function () {
+      console.log('modal is working');
+      $('.modal-container').addClass('showing');
+    });
+
+    $('.modal-x, .modal-container').on('click', function () {
+      $('.modal-container').removeClass('showing');
+    });
+
+    $('.modal').click(function (event) {
+      event.stopPropagation();
+    });
+
+  // });//close use strict
+
+}]);//close controller
+
 
 //details-edit controller
 tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $scope){

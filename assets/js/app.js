@@ -26,19 +26,20 @@ tabbyApp.config(function($routeProvider) {
 // }//closes xhr
 
 ////jquery for modal in new-cat.html
-$(function () {
-  'use strict';
-
-  $('#submit-new').on('click', function () {
-    $('.modal-container').addClass('showing');
-  });
-
-  $('.modal-x, .modal-container').on('click', function () {
-    $('.modal-container').removeClass('showing');
-  });
-
-  $('.modal').click(function (event) {
-    event.stopPropagation();
-  });
-
-});
+// $(function () {
+//   'use strict';
+//
+//   $('#submit-new').on('click', function () {
+//     console.log('modal is working');
+//     $('.modal-container').addClass('showing');
+//   });
+//
+//   $('.modal-x, .modal-container').on('click', function () {
+//     $('.modal-container').removeClass('showing');
+//   });
+//
+//   $('.modal').click(function (event) {
+//     event.stopPropagation();
+//   });
+//
+// });
