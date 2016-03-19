@@ -48,7 +48,7 @@ var newCat;
 
     $('.submit-btn').click(function(data){
 
-      cname = $("#frm-cat-name").val();
+      cName = $("#frm-cat-name").val();
       cType = $("#frm-type").val();
       cPrice = $("#frm-price").val();
       cDesc = $("#frm-desc").val();

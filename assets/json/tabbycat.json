@@ -283,17 +283,20 @@
       ]
     },
     {
-      "id": "bfd73cb5-9d7b-4af1-9466-e530aa4f1f2d"
-    },
-    {
-      "id": "42aac619-bbdc-45fe-9302-ccfbe508f3c3"
-    },
-    {
+      "name": "Big BooBoo",
       "type": "Special",
       "price": 500000,
       "desc": "This is a truly special cat that just requires love and a band-aid for his booboos.",
       "image": "assets/images/big-booboo.png",
       "id": "b7b3bc74-116c-432f-a402-f198db259181"
+    },
+    {
+      "name": "Curmudgeonly Pippins",
+      "type": "Special",
+      "price": 9.99,
+      "desc": "Kitty on Sale! this grumpy cat is still very lovable when he's well fed.",
+      "image": "assets/images/Curmudgeonly-pippins.png",
+      "id": "81ffa3cd-36a4-4716-8708-56a7a38034e2"
     }
   ]
 }
