@@ -6,9 +6,17 @@ tabbyApp.controller('mainController', function($scope) {
     $scope.message = 'THIS WORKS, I HOPE';
   });
 
+  var clickedCat;
+
 //landing page controller to get all the cats from json file
 tabbyApp.controller('landingPageController', [ '$http', '$scope', function($http, $scope){
   $scope.message = "SCOPE IS WORKING";
+  //$scope.clickedCat ="";
+
+  $scope.iClickedACat = function(index){
+   clickedCat = index;
+   console.log("clickedCat = " +clickedCat);
+ }//end i clicked acat
 
   // $.ajax({
   //   type: 'GET',
@@ -106,7 +114,25 @@ tabbyApp.controller('modalController', [ '$http', '$scope', function($http, $sco
 //details-edit controller
 tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $scope){
   $scope.message = "scope success";
-  $http.get('assets/json/tabbycat.json').success(function(data){
-    $scope.cats = data
+
+  $http.get('http://localhost:3000/allCats').success(function(data){
+    $scope.cats = data;
+    console.log("The data is="+data);
+
+    $scope.cName = data[clickedCat].name;
+    $scope.cPrice = data[clickedCat].price;
+    $scope.cType = data[clickedCat].type;
+    $scope.cDesc = data[clickedCat].desc;
+    $scope.cImg = data[clickedCat].image;
+    $scope.cRev = data[clickedCat].reviews;
+
+    $('#frm-type').val(cType);
+
+    console.log(cName);
   });//close get
+
+
+
+
+
 }]);//close controller

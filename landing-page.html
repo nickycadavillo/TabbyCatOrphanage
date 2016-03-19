@@ -4,7 +4,7 @@
 <a href = "#NewCat" id="navLink"><i class="fa fa-plus fa-3x" alt="Add New Cat to Inventory"></i></a>
 <a href = "#Cart" id="navLink"><i class="fa fa-shopping-cart fa-3x" alt="Go To My Cart"></i></a>
 <div class="allCatsContainer" ng-repeat="cat in cats | filter:param">
-  <a href = "#DetailsEdit">
+  <a href = "#DetailsEdit" ng-click="iClickedACat($index)">
     <span class="aCat">
       <span class="catInfo">{{cat.name}}<br><span class="catDesc">{{cat.desc}}</span> <br><span class="catCost">{{cat.price|currency}}</span></span>
         <img src ="{{cat.image}}" width = "300px"></img>
