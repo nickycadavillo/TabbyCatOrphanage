@@ -1,17 +1,23 @@
+<div ng-controller = "landingPageController as cont" id="landPgContainer">
 
-<div ng-controller = "landingPageController as cont">
+<input type="text" id="filterText" placeholder="filter cats" ng-model="param"></input>
+<div class="allCatsContainer" ng-repeat="cat in cats | filter:param">
+  <a href = "#DetailsEdit">
+    <span class="aCat">
+      <span class="catInfo">{{cat.name}}<br><p style="font-family: 'Old Standard TT'">{{cat.desc}}</p><br>{{cat.price|currency}}</span>
+        <img src ="{{cat.image}}" width = "300px"></img>
 
-  <div>This is the landing page </div>
+    </span><!--end of each cat-->
+  </a><!--closes the link to the details page, per cat-->
+</div><!--end of the all cats container. no cats outside this-->
+<br><br>
+<div>This is the landing page </div><br>
 
-  <a href = "#NewCat">TAKE ME TO NEW CAT</a>
-  <a href = "#DetailsEdit">TAKE ME TO DETAILS EDIT PAGE</a>
-  <a href = "#Cart">TAKE ME TO CART PAGE</a>
+<a href = "#NewCat">TAKE ME TO NEW CAT</a><br>
+<a href = "#Cart">TAKE ME TO CART PAGE</a><br>
 
-{{message}}
 
-<!-- {{cats}} -->
-<div ng-repeat="cat in cats">
-  <img src ="{{cat.image}}" width = "300px"></img>
-</div>
 
-</div>
+
+<!-- {{message}} -->
+</div><!--end the controlller-->
