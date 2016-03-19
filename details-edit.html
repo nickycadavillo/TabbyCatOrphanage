@@ -1,12 +1,43 @@
-<div> THIS IS DETAILS PAGE </div>
 
 <div ng-controller = "editPageController">
 
-<!-- {{cats}} -->
-
 <form class="form">
+    <div ng-click = "editing =! editing" id = "click-edit" class = "submit-btn">click to edit</div>
+    <div class = "frm-left">
+      <input class = "frm-img" type="text" placeholder="Insert Image URL here!"/>
+    </div>
+    <div class = "frm-right">
+      <label for = "cat-name">Cat Name</label>
+      <label ng-hide = "editing" for = "cat-name">{{cat.name}}</label>
+      <input ng-show = "editing" ng-model = "cats" id = "frm-cat-name" type="text" placeholder="Cat Name"/>
+      <label for = "price">Price</label>
+      <label ng-hide = "editing" for = "price">Price</label>
+      <input ng-show = "editing" id = "frm-price" type="price" placeholder="Price"/>
+      <label for = "types">Cat Type</label>
+      <label ng-hide = "editing" for = "types">Cat Type</label>
+      <select ng-show = "editing" id="frm-type" name="Types">
+        <option>Special</option>
+        <option>Rainbow</option>
+        <option>Night</option>
+        <option>Evil</option>
+        <option>Space</option>
+        <option>Caspers</option>
+      </select>
+      <label for = "foster-p">Foster Parent</label>
+      <label ng-hide = "editing" for = "foster-p">Foster Parent</label>
+      <input ng-show = "editing" id = "frm-foster" type="text" placeholder="Your name"/>
+    </div>
+    <div class = "frm-bottom">
+      <label for = "cat-desc">Description</label>
+      <label ng-hide = "editing" for = "cat-desc">Description</label>
+      <textarea ng-show = "editing" id="frm-desc" name="description" placeholder="Describe your furry friend"></textarea>
+    </div>
+    <div id = "submit-edit" class = "submit-btn">submit to save</div>
+</form>
+
+<!-- <form class="form">
     <label ng-hide = "editing" for = "cat-name">{{cats}}</label>
-    <input  ng-show = "editing" ng-model = "cats"  id = "cat-name" type="text"/>
+    <input  ng-show = "editing" ng-model = "cats"  id = "cat-name" type="text"/> -->
     <!-- <input type="text" placeholder="Image url"/>
     <select id="Type" name="Types">
       <option>Special</option>
@@ -22,7 +53,7 @@
     <input ng-show = "editing" ng-model = "edit.foster" id = "foster-p" type="text" placeholder="Foster Parent"/>
     <label for = "cat-desc"></label>
     <textarea id="cat-desc" name="description" placeholder="description"></textarea> -->
-    <div ng-click = "editing = !editing" class = "submit-btn">BUTTON</div>
-</form>
+    <!-- <div ng-click = "editing = !editing" class = "submit-btn">BUTTON</div> -->
+<!-- </form> -->
 
 </div>
