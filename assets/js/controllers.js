@@ -43,6 +43,7 @@ tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $sc
 
 
       console.log("we clicked");
+      // $(.form).val('');
 
       $.ajax({
         method: "POST",
@@ -59,6 +60,31 @@ tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $sc
     });
 
 }]);//close controller
+
+
+//modal controller
+tabbyApp.controller('modalController', [ '$http', '$scope', function($http, $scope){
+
+  // $(function () {
+  //   'use strict';
+
+    $('#submit-new').on('click', function () {
+      console.log('modal is working');
+      $('.modal-container').addClass('showing');
+    });
+
+    $('.modal-x, .modal-container').on('click', function () {
+      $('.modal-container').removeClass('showing');
+    });
+
+    $('.modal').click(function (event) {
+      event.stopPropagation();
+    });
+
+  // });//close use strict
+
+}]);//close controller
+
 
 //details-edit controller
 tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $scope){

@@ -1,5 +1,14 @@
 <div class = "new-cat" ng-controller = "newCatController">
 
+<div ng-controller = "modalController">
+  <div class = "modal-container">
+      <section class = "modal">
+        <button class="modal-x">x</button>
+        <h1>Thank you!</h1>
+      </section>
+  </div> <!-- closes modal-container -->
+</div>  <!-- closes modal controller -->
+
 <form class="form">
     <div class = "frm-left">
       <input class = "frm-img" type="text" placeholder="Insert Image URL here"/>
@@ -28,12 +37,6 @@
     </div>
 </form>
 
-<div class = "modal-container">
-    <section class = "modal">
-      <button class="modal-x">x</button>
-      <h1>Thank you!</h1>
-    </section>
-  </div>
 
 
 </div>
