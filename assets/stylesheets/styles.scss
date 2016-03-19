@@ -1,6 +1,7 @@
 $heading-font: 'Questrial', sans-serif;
 $content-font: 'Old Standard TT', serif;
 
+
 body{
   background:#D0F2E7;
 }
@@ -87,6 +88,31 @@ h2{
 
 // styles for new-cat.html and details-edit.html below
 
+$breakpoints: (
+  'phone': (max-width: 690px),
+  'medium': (max-width: 1000px),
+  'large': (min-width: 1001px),
+);
+// SOURCED FROM: http://sass-guidelin.es/#responsive-web-design-and-breakpoints
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
 
 .form {
   color: rgb(223,59,140);
@@ -94,6 +120,8 @@ h2{
   width: 90%;
   margin-top: 5%;
   margin-left: 5%;
+
+  // display: table;
 
   label {
     font-family: $heading-font;
@@ -116,12 +144,39 @@ h2{
   vertical-align: top;
   width: 30%;
   display: inline-block;
+  overflow: hidden;
+
+  @include respond-to('medium') {
+    width: 35%;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  @include respond-to('phone') {
+    display: block;
+    width: 100%;
+    margin-bottom: 5%;
+  }
 
   .frm-img {
     background-color: rgb(173,224,219);
     margin-top: .5em;
     width: 300px;
     height: 300px;
+
+    @include respond-to('medium') {
+      width: 260px;
+      height: 260px;
+      text-align: center;
+    }
+
+    @include respond-to('phone') {
+      display: block;
+      width: 100%;
+      height: 350px;
+
+    }
+
   }
 
   ::-webkit-input-placeholder {
@@ -129,6 +184,7 @@ h2{
    text-align: center;
    font-family: $heading-font;
    text-transform: uppercase;
+
  }
 }//closes frm-left
 
@@ -136,6 +192,20 @@ h2{
   vertical-align: top;
   width: 60%;
   display: inline-block;
+  overflow: hidden;
+
+  @include respond-to('medium') {
+    width: 50%;
+    margin-left: 5%;
+  }
+
+  @include respond-to('phone') {
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
 
   input {
     background-color: rgb(235,242,242);
@@ -157,10 +227,15 @@ h2{
 } //closes frm-right
 
 .frm-bottom{
+  width: 100%;
 
   #frm-desc{
-    width: 99%;
+    width: 90%;
     height: 100px;
+
+    @include respond-to('phone') {
+      width: 100%;
+    }
   }
 
   textarea {
@@ -181,7 +256,38 @@ h2{
   color: white;
   background-color: rgb(223,59,140);
   font-weight: 400;
+
+  @include respond-to('phone') {
+    margin-left: 0%;
+  }
+
 } // closes submit btn
+
+.modal-container {
+  position: fixed;
+  background: #C0C0C0;
+  display: none;
+}
+
+
+.modal-container.showing {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  width: 50%;
+  padding: 2em;
+}
+
+.modal-x {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    border-radius: 2em;
+    border: 1px solid black;
+}
+
 
 
 //end styles for new-cat.html and details-edit.html

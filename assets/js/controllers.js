@@ -56,8 +56,7 @@ tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $sc
 
         //this angular.js implimentation of getting and posting to json. not working they might work...?
       // $http.post('http://localhost:3000/allCats', newCat).then(postSuccess, postFailure);
-    })
-
+    });
 
 }]);//close controller
 
