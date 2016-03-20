@@ -289,6 +289,14 @@
       "desc": "Is cat. Is awesome. Is cute. Yes.",
       "image": "assets/images/meowy-rager.png",
       "id": "7bb42c16-f1f4-4d70-ba25-900f21f8cc2b"
+    },
+    {
+      "name": "Space Smooch",
+      "type": "Evil",
+      "price": 12000,
+      "desc": "The best, most spacey cat in the outer space.",
+      "image": "assets/images/space-smooch.png",
+      "id": "33ecd2e0-c3b5-45aa-bc2f-4944431f6836"
     }
   ]
 }
