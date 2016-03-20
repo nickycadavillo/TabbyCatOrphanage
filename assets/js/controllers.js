@@ -110,6 +110,7 @@ tabbyApp.controller('modalController', [ '$http', '$scope', function($http, $sco
 
 }]);//close controller
 
+var globalData;
 
 //details-edit controller
 tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $scope){
@@ -117,6 +118,7 @@ tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $
 
   $http.get('http://localhost:3000/allCats').success(function(data){
     $scope.cats = data;
+    globalData = data;
     console.log("The data is="+data);
 
     $scope.cName = data[clickedCat].name;
@@ -129,10 +131,33 @@ tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $
     $('#frm-type').val(cType);
 
     console.log(cName);
+
   });//close get
 
+  $scope.clickedCat = clickedCat;
 
-
+  $scope.smushCatToCart = function(catIndexNum)
+  {
+    console.log("we're smushin cats!" + catIndexNum);
+    myCart.push(globalData[catIndexNum]);
+  }
 
 
 }]);//close controller
+
+var myCart = [];
+
+tabbyApp.controller('cartPageController', ['$http','$scope', function($http, $scope){
+ $scope.madwords ="we have scope!";
+
+ $http.get('http://localhost:3000/allCats').success(function(data){
+   $scope.cats = data;
+   $scope.myCart = myCart;
+
+  console.log(myCart);
+
+
+
+});
+
+}]);//end cart controller

@@ -1,1 +1,4 @@
-<div> THIS IS THE CART PAGE </div>
+<div class="cartPage" ng-controller="cartPageController" > THIS IS THE CART PAGE
+{{madwords}}
+<div class="cart" ng-repeat="cat in myCart">{{cat.name}}</div>
+</div>

@@ -13,7 +13,10 @@
   </div>  <!-- closes modal controller -->
 
 <form class="form">
-    <div ng-click = "editing =! editing" id = "click-edit">click to edit</div>
+  <span class="navContain">
+    <div ng-click = "editing =! editing" id="navLink"><i class="fa fa-pencil-square-o fa-3x"></i></div>
+    <a href = "#Cart"><div id="navLink"><i class="fa fa-cart-plus fa-3x" ng-click="smushCatToCart(clickedCat)"></i></div></a>
+  </span><br>
     <div class = "frm-left">
       <input id = "details-photo" style = "background-image: url('{{cImg}}');" class = "frm-img" type="text" placeholder="{{cImg}}"/>
     </div>

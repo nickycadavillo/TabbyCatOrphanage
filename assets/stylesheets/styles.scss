@@ -108,6 +108,10 @@ h2{
   }
 }
 
+.navContain{
+  margin-left: 45%;
+}
+
 
 // styles for new-cat.html and details-edit.html below
 
@@ -143,7 +147,6 @@ $breakpoints: (
   width: 90%;
   margin-top: 5%;
   margin-left: 5%;
-
   // display: table;
 
   .new-label {
@@ -350,7 +353,7 @@ $breakpoints: (
 } //closes modal-x
 
 
-#click-edit{
+.click-edit{
   margin-top: 1em;
   margin-left: 40%;
   margin-bottom: 3em;
