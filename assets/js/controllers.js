@@ -93,7 +93,7 @@ tabbyApp.controller('modalController', [ '$http', '$scope', function($http, $sco
   // $(function () {
   //   'use strict';
 
-    $('#submit-new').on('click', function () {
+    $('.submit-btn').on('click', function () {
       console.log('modal is working');
       $('.modal-container').addClass('showing');
     });
