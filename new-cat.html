@@ -3,7 +3,7 @@
 <div ng-controller = "modalController">
   <div class = "modal-container">
       <section class = "modal">
-        <button class="modal-x">x</button>
+        <a href = "#/"><button class="modal-x">x</button></a>
         <h1>Thank you!</h1>
       </section>
   </div> <!-- closes modal-container -->
@@ -14,11 +14,11 @@
       <input class ="frm-img" type="text" placeholder="Insert Image URL here"/>
     </div>
     <div class = "frm-right">
-      <label for = "cat-name">Cat Name</label>
+      <label class = "new-label" for = "cat-name">Cat Name</label>
       <input id = "frm-cat-name" type="text" placeholder="Cat Name"/>
-      <label for = "price">Price</label>
+      <label class = "new-label" for = "price">Price</label>
       <input id = "frm-price" type="price" placeholder="How much is your tabby cat worth?"/>
-      <label for = "types">Cat Type</label>
+      <label class = "new-label" for = "types">Cat Type</label>
       <select id="frm-type" name="Types">
         <option>Special</option>
         <option>Rainbow</option>
@@ -27,11 +27,11 @@
         <option>Space</option>
         <option>Caspers</option>
       </select>
-      <label for = "foster-p">Foster Parent</label>
+      <label class = "new-label" for = "foster-p">Foster Parent</label>
       <input id = "frm-foster" type="text" placeholder="Your name"/>
     </div>
     <div class = "frm-bottom">
-      <label for = "cat-desc">Description</label>
+      <label class = "new-label" for = "cat-desc">Description</label>
       <textarea  id="frm-desc" name="description" placeholder="Describe your furry friend"></textarea>
       <div id = "submit-new" class = "submit-btn">save</div>
     </div>
