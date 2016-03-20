@@ -45,6 +45,7 @@
       <div id = "description" class = "cat-label">Description</div>
       <label id = "details-label-desc" ng-hide = "editing">{{cDesc}}</label>
       <textarea ng-show = "editing" ng-model = "cat" id="frm-desc" name="description" placeholder="{{cDesc}}"></textarea>
+      <div ng-show = "editing" class = "save-edit">save</div>
     </div>
     <!-- <div class = "all-reviews" ng-repeat="cRev in "> -->
       <ul class = "list-reviews"><p class = "review-p">reviews:</p>

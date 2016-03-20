@@ -305,6 +305,14 @@ h2 {
   background-color: #df3b8c;
   font-weight: 400; }
 
+.save-edit {
+  width: 100px;
+  height: 25px;
+  margin-left: 40%;
+  text-transform: uppercase;
+  color: white;
+  background-color: #df3b8c; }
+
 .list-reviews {
   margin-top: 3em;
   margin-bottom: 3em;
