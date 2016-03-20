@@ -23,7 +23,7 @@
     <div class = "frm-right">
       <div id = "cat-name" class = "cat-label">Cat Name</div>
       <label class = "details-label" ng-hide = "editing">{{cName}}</label>
-      <input ng-show = "editing" ng-model ="cat" id = "frm-cat-name" type="text" placeholder="{{cName}}"/>
+      <input ng-show = "editing" id = "frm-cat-name" type="text" placeholder="{{cName}}"/>
       <div id = "cat-price" class = "cat-label">Price</div>
       <label class = "details-label" ng-hide ="editing">{{cPrice}}</label>
       <input ng-show = "editing" id = "frm-price" type="price" placeholder="{{cPrice}}"/>
@@ -44,7 +44,7 @@
     <div class = "frm-bottom">
       <div id = "description" class = "cat-label">Description</div>
       <label id = "details-label-desc" ng-hide = "editing">{{cDesc}}</label>
-      <textarea ng-show = "editing" ng-model = "cat" id="frm-desc" name="description" placeholder="{{cDesc}}"></textarea>
+      <textarea ng-show = "editing" id="frm-desc" name="description" placeholder="{{cDesc}}"></textarea>
       <div ng-show = "editing" class = "save-edit">save</div>
     </div>
     <!-- <div class = "all-reviews" ng-repeat="cRev in "> -->
