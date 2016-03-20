@@ -250,6 +250,7 @@ h2 {
 #click-edit {
   margin-top: 1em;
   margin-left: 40%;
+  margin-bottom: 3em;
   width: 150px;
   height: 30px;
   text-transform: uppercase;
@@ -290,5 +291,26 @@ h2 {
   width: 300px;
   height: 150px;
   margin-bottom: 1em; }
+
+#send-review {
+  width: 100px;
+  height: 25px;
+  margin-left: 40%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: #df3b8c;
+  font-weight: 400; }
+
+.list-reviews {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 0;
+  list-style: none;
+  text-transform: uppercase; }
+  .list-reviews li {
+    padding-top: 1em;
+    text-transform: none;
+    font-family: "Old Standard TT", serif; }
 
 /*# sourceMappingURL=styles.css.map */

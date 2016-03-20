@@ -353,6 +353,7 @@ $breakpoints: (
 #click-edit{
   margin-top: 1em;
   margin-left: 40%;
+  margin-bottom: 3em;
   width: 150px;
   height: 30px;
   text-transform: uppercase;
@@ -401,7 +402,37 @@ $breakpoints: (
   height: 150px;
   margin-bottom: 1em;
 
+}
 
+#send-review{
+  width: 100px;
+  height: 25px;
+  margin-left: 40%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: rgb(223,59,140);
+  font-weight: 400;
 }
 
 //end styles for new-cat.html and details-edit.html
+
+//styles for reviews
+.list-reviews{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 0;
+  list-style: none;
+  text-transform: uppercase;
+
+  li{
+    padding-top: 1em;
+    text-transform: none;
+    font-family: $content-font;
+
+  }
+}
+
+
+
+//end styles for reviews

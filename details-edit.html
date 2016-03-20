@@ -7,6 +7,7 @@
           <button class="modal-x">x</button>
           <input id = "reviewer-input" type="text" placeholder="Your name"/>
           <textarea class ="review-text" placeholder="Write your review here"></textarea>
+          <div id = "send-review">send</div>
         </section>
     </div> <!-- closes modal-container -->
   </div>  <!-- closes modal controller -->
@@ -42,6 +43,13 @@
       <label id = "details-label-desc" ng-hide = "editing">{{cDesc}}</label>
       <textarea ng-show = "editing" ng-model = "cat" id="frm-desc" name="description" placeholder="{{cDesc}}"></textarea>
     </div>
+    <!-- <div class = "all-reviews" ng-repeat="cRev in "> -->
+      <ul class = "list-reviews"><p class = "review-p">reviews:</p>
+        <li>Reviewer: {{cRev[0].revName}}</li>
+        <li>{{cRev[0].stars}} stars</li>
+        <li>Review: {{cRev[0].text}}</li>
+      </ul>
+     <!-- </div> -->
     <div class = "submit-btn">Add A Review</div>
 </form>
 
