@@ -289,6 +289,22 @@
       "desc": "Is cat. Is awesome. Is cute. Yes.",
       "image": "assets/images/meowy-rager.png",
       "id": "7bb42c16-f1f4-4d70-ba25-900f21f8cc2b"
+    },
+    {
+      "name": "",
+      "type": "Special",
+      "price": "",
+      "desc": "",
+      "image": "",
+      "id": "578510cd-8253-4b7f-b301-6fba7ee37804"
+    },
+    {
+      "name": "",
+      "type": "Special",
+      "price": "",
+      "desc": "",
+      "image": "",
+      "id": "27cc165b-a74a-4b0c-bde8-a5b83a9a8c07"
     }
   ]
 }

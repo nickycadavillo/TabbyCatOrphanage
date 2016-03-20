@@ -1,20 +1,30 @@
 
 <div ng-controller = "editPageController">
 
+  <div ng-controller = "modalController">
+    <div class = "modal-container">
+        <section class = "modal">
+          <button class="modal-x">x</button>
+          <input id = "reviewer-input" type="text" placeholder="Your name"/>
+          <textarea class ="review-text" placeholder="Write your review here"></textarea>
+        </section>
+    </div> <!-- closes modal-container -->
+  </div>  <!-- closes modal controller -->
+
 <form class="form">
-    <div ng-click = "editing =! editing" id = "click-edit" class = "submit-btn">click to edit</div>
+    <div ng-click = "editing =! editing" id = "click-edit">click to edit</div>
     <div class = "frm-left">
-      <input width="300" height="300" style=" background-image: url('{{cImg}}');" class = "frm-img" type="text" placeholder="{{cImg}}"/>
+      <input id = "details-photo" style = "background-image: url('{{cImg}}');" class = "frm-img" type="text" placeholder="{{cImg}}"/>
     </div>
     <div class = "frm-right">
       <div id = "cat-name" class = "cat-label">Cat Name</div>
-      <label ng-hide = "editing">{{cName}}</label>
+      <label class = "details-label" ng-hide = "editing">{{cName}}</label>
       <input ng-show = "editing" ng-model ="cat" id = "frm-cat-name" type="text" placeholder="{{cName}}"/>
       <div id = "cat-price" class = "cat-label">Price</div>
-      <label ng-hide ="editing">{{cPrice}}</label>
+      <label class = "details-label" ng-hide ="editing">{{cPrice}}</label>
       <input ng-show = "editing" id = "frm-price" type="price" placeholder="{{cPrice}}"/>
       <div id = "cat-type" class = "cat-label">Cat Type</div>
-      <label ng-hide = "editing">{{cType}}</label>
+      <label id = "details-type" class = "details-label" ng-hide = "editing">{{cType}}</label>
       <select ng-show = "editing" ng-model = "cats" id="frm-type" name="Types">
         <option>Special</option>
         <option>Rainbow</option>
@@ -23,37 +33,17 @@
         <option>Space</option>
         <option>Caspers</option>
       </select>
-      <div id = "foster-parent" class = "cat-label"></div>
-      <label ng-hide = "editing">Foster Parent</label>
+      <div id = "foster-parent" class = "cat-label">Foster Parent</div>
+      <label class = "details-label" ng-hide = "editing">Foster Parent</label>
       <input ng-show = "editing" id = "frm-foster" type="text" placeholder="Your name"/>
     </div>
     <div class = "frm-bottom">
       <div id = "description" class = "cat-label">Description</div>
-      <label ng-hide = "editing">{{cDesc}}</label>
+      <label id = "details-label-desc" ng-hide = "editing">{{cDesc}}</label>
       <textarea ng-show = "editing" ng-model = "cat" id="frm-desc" name="description" placeholder="{{cDesc}}"></textarea>
     </div>
-    <div id = "submit-edit" class = "submit-btn">submit to save</div>
+    <div class = "submit-btn">Add A Review</div>
 </form>
 
-<!-- <form class="form">
-    <label ng-hide = "editing" for = "cat-name">{{cats}}</label>
-    <input  ng-show = "editing" ng-model = "cats"  id = "cat-name" type="text"/> -->
-    <!-- <input type="text" placeholder="Image url"/>
-    <select id="Type" name="Types">
-      <option>Special</option>
-      <option>Rainbow</option>
-      <option>Night</option>
-      <option>Evil</option>
-      <option>Space</option>
-      <option>Caspers</option>
-    </select>
-    <label ng-hide = "editing" for = "price">{{edit.price}}</label>
-    <input ng-show = "editing" ng-model = "edit.price" id = "price" type="price" placeholder="Price"/>
-    <label ng-hide = "editing" for = "foster-p">{{edit.foster}}</label>
-    <input ng-show = "editing" ng-model = "edit.foster" id = "foster-p" type="text" placeholder="Foster Parent"/>
-    <label for = "cat-desc"></label>
-    <textarea id="cat-desc" name="description" placeholder="description"></textarea> -->
-    <!-- <div ng-click = "editing = !editing" class = "submit-btn">BUTTON</div> -->
-<!-- </form> -->
 
 </div>
