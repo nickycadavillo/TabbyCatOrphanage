@@ -149,6 +149,7 @@ tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $
   {
     console.log("we're smushin cats!" + catIndexNum);
     myCart.push(globalData[catIndexNum]);
+    reCalcTotal();
   }
 
 
@@ -211,15 +212,48 @@ var myCart = [];
 
 tabbyApp.controller('cartPageController', ['$http','$scope', function($http, $scope){
  $scope.madwords ="we have scope!";
+ $scope.remove;
+
+ var temp=0;//this little chunk of code tallies the total price for the cats.
+
+ for(var u=0;u<myCart.length; u++)
+ {
+  temp = temp + myCart[u].price;
+  console.log(temp);
+  console.log("this cat is worth= " + myCart[u].price);
+  $scope.total = temp;
+ }
+
+// var temp2 =0;
+//  function reCalcTotal()
+//  {
+//    for(var u=0;u<myCart.length; u++)
+//    {
+//     temp2 = temp2 + myCart[u].price;
+//     $scope.total = temp2;
+//    }
+//  }//end recalctotal
+
+ $scope.removeFromCart = function(index){
+  myCart.splice(index,1);
+  temp=0;
+  for(var u=0;u<myCart.length; u++)
+  {
+   temp = temp + myCart[u].price;
+   console.log(temp);
+   console.log("this cat is worth= " + myCart[u].price);
+   $scope.total = temp;
+  }
+  // reCalcTotal();
+
+ }
+
 
  $http.get('http://localhost:3000/allCats').success(function(data){
    $scope.cats = data;
    $scope.myCart = myCart;
-
   console.log(myCart);
-
-
-
 });
+
 
 }]);//end cart controller

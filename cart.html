@@ -1,4 +1,16 @@
-<div class="cartPage" ng-controller="cartPageController" > THIS IS THE CART PAGE
-{{madwords}}
-<div class="cart" ng-repeat="cat in myCart">{{cat.name}}</div>
+<div class="cartPage" ng-controller="cartPageController" ng-model="total">
+<br><br><h2 style="margin-left: 38%;">- Your Kitty Cart -</h2>
+<div class="cart" ng-repeat="cat in myCart">
+  <div class="oneCat">
+    <img src="{{cat.image}}" width="100"></img>
+    <span class="evenCols">{{cat.name}}</span>
+    <span class="evenCols">{{cat.type}}</span>
+    <span class="evenCols">{{cat.desc}}</span>
+    <span class="evenCols">{{cat.price|currency}}</span>
+    <span class="evenCol"><i class="fa fa-times-circle fa-3x" style="color: #DF3B8C; padding-top: -70px;" ng-click="removeFromCart($index)"></i></span>
+  </div><!--end oneCat-->
+</div><!--end cart-->
+
+<h2 style="margin-left: 36%; margin-top: 30px;">Total: {{total|currency}}</h2>
+<div>Checkout</div>
 </div>
