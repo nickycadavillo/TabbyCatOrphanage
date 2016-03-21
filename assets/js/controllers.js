@@ -216,6 +216,7 @@ tabbyApp.controller('cartPageController', ['$http','$scope', function($http, $sc
 
  var temp=0;//this little chunk of code tallies the total price for the cats.
 
+//this calculates the total when you go to the page.
  for(var u=0;u<myCart.length; u++)
  {
   temp = temp + myCart[u].price;
@@ -224,18 +225,9 @@ tabbyApp.controller('cartPageController', ['$http','$scope', function($http, $sc
   $scope.total = temp;
  }
 
-// var temp2 =0;
-//  function reCalcTotal()
-//  {
-//    for(var u=0;u<myCart.length; u++)
-//    {
-//     temp2 = temp2 + myCart[u].price;
-//     $scope.total = temp2;
-//    }
-//  }//end recalctotal
-
  $scope.removeFromCart = function(index){
   myCart.splice(index,1);
+  //and this calculates the total when you delete a cat.
   temp=0;
   for(var u=0;u<myCart.length; u++)
   {
