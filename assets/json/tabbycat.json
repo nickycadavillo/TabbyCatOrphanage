@@ -3,14 +3,29 @@
     {
       "id": 0,
       "name": "Fluffy Knight",
-      "type": "? object:299 ?",
+      "type": "Special",
       "price": 10,
-      "desc": "This is a gray cutie with an adorable baseball hat. He loves America's favorite Past time!",
+      "desc": "This is a gray cutie with an adorable baseball hat.",
       "image": "assets/images/fluffy-knight.png",
       "reviews": [
         {
           "revName": "Nicky C",
           "text": "This is the best cat ever. Yay!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Good Rainbow",
+      "type": "Rainbow",
+      "price": 100000000,
+      "desc": "All the colors of the rainbow in cat form.",
+      "image": "assets/images/good-rainbow.gif",
+      "reviews": [
+        {
+          "revName": "Best Matt Ever",
+          "text": "He's a good lookin' rainbow. I'm definitely giving him 5 stars!",
           "stars": 5
         }
       ]
@@ -156,6 +171,21 @@
       ]
     },
     {
+      "id": 13,
+      "name": "Jiggly Casper",
+      "type": "casper",
+      "price": 69999,
+      "desc": "AH! ITS A GHOST! HOWD YOU GET IN HERE! DONT HAUNT ME!",
+      "image": "assets/images/jiggly-casper.png",
+      "reviews": [
+        {
+          "revName": "Dennis",
+          "text": "Best haunting ever. would get haunted again.",
+          "stars": 5
+        }
+      ]
+    },
+    {
       "id": 14,
       "name": "Space Hijinks",
       "type": "Space",
@@ -188,8 +218,8 @@
     {
       "id": 16,
       "name": "Loopy Rainbow",
-      "type": "? object:54 ?",
-      "price": 1900,
+      "type": "rainbow",
+      "price": 1928.37,
       "desc": "This cat comes from a land of JUST rainbows, so he is very confused about regular human ",
       "image": "assets/images/Loopy-Rainbow.gif",
       "reviews": [
@@ -202,11 +232,18 @@
     },
     {
       "id": 17,
-      "name": "Sparkly Pinky THE GREAT",
-      "type": "? object:302 ?",
-      "price": 899,
-      "desc": "this cat has no cat-agory in our system to define its very unique qualities. but you can see them for yourself: PINKNESS!",
-      "image": "assets/images/sparkly-pinky.png"
+      "name": "Space Killer",
+      "type": "space",
+      "price": 700,
+      "desc": "This intergalactic assassin is visiting our world in cat-form for a while.",
+      "image": "assets/images/space-killer.png",
+      "reviews": [
+        {
+          "revName": "Jeremy",
+          "text": "I like this cat because he has unique perspectives on life, the universe, Everything!",
+          "stars": 4
+        }
+      ]
     },
     {
       "id": 18,
@@ -224,12 +261,59 @@
       ]
     },
     {
+      "id": 19,
+      "name": "Sir Bailey",
+      "type": "special",
+      "price": 89012,
+      "desc": "This kitty is happy to lounge all day and watch the beautiful game on tv.",
+      "image": "assets/images/sir-bailey.png",
+      "reviews": [
+        {
+          "revName": "Greg",
+          "text": "I would get along with this cat. we could watch the footy!",
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Pumpernickel",
+      "type": "Caspers",
+      "price": "500",
+      "desc": "Is cat. Is awesome. Is cute. Yes.",
+      "image": "assets/images/meowy-rager.png"
+    },
+    {
       "id": 21,
+      "name": "Space Smooch",
+      "type": "Evil",
+      "price": 12000,
+      "desc": "The best, most spacey cat in the outer space.",
+      "image": "assets/images/space-smooch.png"
+    },
+    {
+      "id": 22,
+      "name": "Petty Pigeon",
+      "type": "Special",
+      "price": 0.99,
+      "desc": "This is a standard meowing cat. not reliable. but that's standard for cats.",
+      "image": "assets/images/petty-pigeon.png"
+    },
+    {
+      "name": "Sparkly Pinky",
+      "type": "Special",
+      "price": 899,
+      "desc": "this cat has no cat-agory in our system to define its very unique qualities. but you can see them for yourself: PINKNESS!",
+      "image": "assets/images/sparkly-pinky.png",
+      "id": 23
+    },
+    {
       "name": "Night Knight",
-      "type": "? object:106 ?",
-      "price": 10,
+      "type": "Night",
+      "price": 100,
       "desc": "This kitty is veerrrrryyy sleeeepy. thats why he's called night night. Cause he's always sleepin!",
-      "image": "assets/images/night-knight.png"
+      "image": "assets/images/night-knight.png",
+      "id": 24
     }
   ]
 }
