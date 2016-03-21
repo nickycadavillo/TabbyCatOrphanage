@@ -314,6 +314,14 @@
       "desc": "This kitty is veerrrrryyy sleeeepy. thats why he's called night night. Cause he's always sleepin!",
       "image": "assets/images/night-knight.png",
       "id": 24
+    },
+    {
+      "id": 25,
+      "name": "Tricksy Berry",
+      "type": "Special",
+      "price": 1984,
+      "desc": "Contrarian to a fault. Fan of green yarn. Loves eating buffalo chicken wraps.",
+      "image": "assets/images/tricksy-berry.png"
     }
   ]
 }
