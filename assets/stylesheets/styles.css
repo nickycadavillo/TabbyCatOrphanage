@@ -188,6 +188,9 @@ h2 {
     @media (max-width: 690px) {
       .frm-bottom #frm-desc {
         width: 100%; } }
+  .frm-bottom label {
+    display: block;
+    width: 100%; }
   .frm-bottom textarea {
     border: none;
     background-color: #ebf2f2; }

@@ -272,6 +272,11 @@ $breakpoints: (
     }
   }
 
+  label {
+    display: block;
+    width: 100%;
+  }
+
   textarea {
     border: none;
     background-color: rgb(235,242,242);
