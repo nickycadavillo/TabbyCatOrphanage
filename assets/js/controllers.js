@@ -6,12 +6,14 @@ tabbyApp.controller('mainController', function($scope) {
     $scope.message = 'THIS WORKS, I HOPE';
   });
 
+  var catID;
   var clickedCat;
 
 //landing page controller to get all the cats from json file
 tabbyApp.controller('landingPageController', [ '$http', '$scope', function($http, $scope){
   $scope.message = "SCOPE IS WORKING";
   //$scope.clickedCat ="";
+
 
   $scope.iClickedACat = function(index){
    clickedCat = index;
@@ -28,7 +30,11 @@ tabbyApp.controller('landingPageController', [ '$http', '$scope', function($http
   //this seems to work!
   $http.get('http://localhost:3000/allCats').success(function(data){
     $scope.cats = data;
-    console.log($scope.cats);
+    catID = data.length;
+    catID = (data[data.length-1].id)+1;
+    console.log(catID);
+    globalData = data;
+    //console.log($scope.cats);
   });//close get
 
 }]);//close controller
@@ -46,6 +52,7 @@ tabbyApp.controller('newCatController', [ '$http', '$scope', function($http, $sc
       console.log("failure!");
     };
 
+var cID;
 var cName;
 var cType;
 var cPrice;
@@ -56,6 +63,7 @@ var newCat;
 
     $('.submit-btn').click(function(data){
 
+      cID = catID;
       cName = $("#frm-cat-name").val();
       cType = $("#frm-type").val();
       cPrice = $("#frm-price").val();
@@ -63,6 +71,7 @@ var newCat;
       cImg = $(".frm-img").val();
 
       newCat =  {'name': cName,'type': cType,'price': cPrice,'desc': cDesc ,'image': cImg};
+      newCat.id = cID;//this is weird... why cant I put it inside the initial construction (one line above)?
 
       console.log($scope.data);
 
@@ -140,6 +149,59 @@ tabbyApp.controller('editPageController', [ '$http', '$scope', function($http, $
   {
     console.log("we're smushin cats!" + catIndexNum);
     myCart.push(globalData[catIndexNum]);
+  }
+
+
+  $scope.KILLKitty = function(catDex){
+    console.log('trying to kill a cat...?')
+    var newCatDex = globalData[catDex].id;
+    $http.delete('http://localhost:3000/allCats/'+newCatDex);//deletes the cat element
+
+    //all this commented out stuff is trying to renumber the cat id's so that we dont have deletion errors. it dosent work. we might get deletion errors.
+
+    // //this refreshes global data with the cat element no longer there.
+    // $http.get('http://localhost:3000/allCats').success(function(data){
+    //   $scope.cats = data;
+    //   globalData = data;
+    // });//end get data
+    //
+    // var allNewCats=[];
+    // for(var i=0; i<globalData.length; i++)//uses the NEW length of global data to renumber all the cat indexes.
+    // {
+    //   var catNAME = globalData[i].name; //now we re-reite all the cats with their same data, and a NEW id, so that there are no gaps in our cat array.
+    //   var catTYPE = globalData[i].type;
+    //   var catPRICE = globalData[i].price;
+    //   var catDESC = globalData[i].desc;
+    //   var catIMG = globalData[i].image;
+    //   var catREV = globalData[i].reviews;
+    //
+    //   var catClone = {'id': i, 'name': catNAME,'type': catTYPE,'price': catPRICE,'desc': catDESC ,'image': catIMG, 'reviews': catREV};
+    //
+    //   allNewCats.push(catClone);
+    //   console.log(allNewCats);
+    //
+    // }
+    //
+    //   $http.post('http://localhost:3000/', allNewCats).then(function(){console.log("cloned a cat");},function(){console.log("failed to clone!");});
+
+  }//end kill kitty
+
+  $scope.editKitty = function(catIndex)
+  {
+
+    cName = $("#frm-cat-name").val();
+    cType = $("#frm-type").val();
+    cPrice = $("#frm-price").val();
+    cDesc = $("#frm-desc").val();
+    cImg = $(".frm-img").val();
+    cReviews = globalData[catIndex].reviews;
+
+    goodCatIndex = globalData[catIndex].id;
+
+    var editedCat =  {'id': globalData[catIndex].id, 'name': cName,'type': cType,'price': cPrice,'desc': cDesc ,'image': cImg, 'reviews': cReviews};
+
+    $http.put('http://localhost:3000/allCats/'+goodCatIndex, editedCat).then(function(){console.log("SUCCESSFUL EDIT!");},function(){console.log("FAILED TO EDIT!");});
+
   }
 
 

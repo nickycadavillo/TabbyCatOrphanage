@@ -18,15 +18,15 @@
     <a href = "#Cart"><div id="navLink"><i class="fa fa-cart-plus fa-3x" ng-click="smushCatToCart(clickedCat)"></i></div></a>
   </span><br>
     <div class = "frm-left">
-      <input id = "details-photo" style = "background-image: url('{{cImg}}');" class = "frm-img" type="text" placeholder="{{cImg}}"/>
+      <input id = "details-photo" style = "background-image: url('{{cImg}}');" class = "frm-img" type="text" placeholder="{{cImg}}" value="{{cImg}}"/>
     </div>
     <div class = "frm-right">
       <div id = "cat-name" class = "cat-label">Cat Name</div>
       <label class = "details-label" ng-hide = "editing">{{cName}}</label>
-      <input ng-show = "editing" id = "frm-cat-name" type="text" placeholder="{{cName}}"/>
+      <input ng-show = "editing" id = "frm-cat-name" type="text" placeholder="{{cName}}" value ="{{cName}}"/>
       <div id = "cat-price" class = "cat-label">Price</div>
       <label class = "details-label" ng-hide ="editing">{{cPrice}}</label>
-      <input ng-show = "editing" id = "frm-price" type="price" placeholder="{{cPrice}}"/>
+      <input ng-show = "editing" id = "frm-price" type="price" placeholder="{{cPrice}}" value="{{cPrice}}"/>
       <div id = "cat-type" class = "cat-label">Cat Type</div>
       <label id = "details-type" class = "details-label" ng-hide = "editing">{{cType}}</label>
       <select ng-show = "editing" ng-model = "cats" id="frm-type" name="Types">
@@ -44,8 +44,9 @@
     <div class = "frm-bottom">
       <div id = "description" class = "cat-label">Description</div>
       <label id = "details-label-desc" ng-hide = "editing">{{cDesc}}</label>
-      <textarea ng-show = "editing" id="frm-desc" name="description" placeholder="{{cDesc}}"></textarea>
-      <div ng-show = "editing" class = "save-edit">save</div>
+      <textarea ng-show = "editing" id="frm-desc" name="description" placeholder="{{cDesc}}">{{cDesc}}</textarea>
+      <div ng-show = "editing" class = "save-edit" ng-click="editKitty(clickedCat)">save</div>
+      <div ng-show = "editing" class = "save-edit" ng-click="KILLKitty(clickedCat)">Delete</div>
     </div>
     <!-- <div class = "all-reviews" ng-repeat="cRev in "> -->
       <ul class = "list-reviews"><p class = "review-p">reviews:</p>
