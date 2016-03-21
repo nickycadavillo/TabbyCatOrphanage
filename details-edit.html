@@ -36,6 +36,7 @@
         <option>Evil</option>
         <option>Space</option>
         <option>Caspers</option>
+        <option>Pinky</option>
       </select>
       <div id = "foster-parent" class = "cat-label">Foster Parent</div>
       <label class = "details-label" ng-hide = "editing">Foster Parent</label>
@@ -45,8 +46,8 @@
       <div id = "description" class = "cat-label">Description</div>
       <label id = "details-label-desc" ng-hide = "editing">{{cDesc}}</label>
       <textarea ng-show = "editing" id="frm-desc" name="description" placeholder="{{cDesc}}">{{cDesc}}</textarea>
-      <div ng-show = "editing" class = "save-edit" ng-click="editKitty(clickedCat)">save</div>
-      <div ng-show = "editing" class = "save-edit" ng-click="KILLKitty(clickedCat)">Delete</div>
+      <a href = "#/"><div ng-show = "editing"  class = "save-edit" ng-click="editKitty(clickedCat)">save</div></a>
+      <a href = "#/"><div ng-show = "editing"  class = "save-edit" ng-click="KILLKitty(clickedCat)">Delete</div></a>
     </div>
     <!-- <div class = "all-reviews" ng-repeat="cRev in "> -->
       <ul class = "list-reviews"><p class = "review-p">reviews:</p>

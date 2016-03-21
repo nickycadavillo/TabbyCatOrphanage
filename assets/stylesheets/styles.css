@@ -306,9 +306,11 @@ h2 {
   font-weight: 400; }
 
 .save-edit {
+  margin-top: 1em;
   width: 100px;
   height: 25px;
   margin-left: 40%;
+  text-align: center;
   text-transform: uppercase;
   color: white;
   background-color: #df3b8c; }

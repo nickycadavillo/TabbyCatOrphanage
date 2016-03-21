@@ -48,7 +48,7 @@
     {
       "id": 3,
       "name": "Coy Pinky",
-      "type": "Special",
+      "type": "Pinky",
       "price": 50000,
       "desc": "This is a pink cat and pretends he doesn't like you but he does...NOT",
       "image": "assets/images/coy-pink.png",
@@ -300,12 +300,12 @@
       "image": "assets/images/petty-pigeon.png"
     },
     {
+      "id": 23,
       "name": "Sparkly Pinky",
-      "type": "Special",
+      "type": "Pinky",
       "price": 899,
       "desc": "this cat has no cat-agory in our system to define its very unique qualities. but you can see them for yourself: PINKNESS!",
-      "image": "assets/images/sparkly-pinky.png",
-      "id": 23
+      "image": "assets/images/sparkly-pinky.png"
     },
     {
       "name": "Night Knight",
